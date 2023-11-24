@@ -51,8 +51,7 @@
     "preview": "vite preview",
     "format": "pretty-quick --staged --pattern \"**/*.*(ts|tsx|json)\"",
     "format:all": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "prepare": "husky install",
-    "lint": "prettier --check ."
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -76,21 +75,12 @@
       "last 1 safari version"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "prettier --write . && git add -A ."
-    }
-  },
-  "lint-staged": {
-    "*": "prettier --write"
-  },
   "devDependencies": {
     "@types/chrome": "^0.0.251",
     "@types/react-color": "^3.0.5",
     "@types/react-router-dom": "^5.3.0",
     "autoprefixer": "^10.4.16",
     "husky": "7.0.4",
-    "lint-staged": "^15.1.0",
     "postcss": "^8.4.31",
     "prettier": "2.5.1",
     "tailwindcss": "^3.3.5",
