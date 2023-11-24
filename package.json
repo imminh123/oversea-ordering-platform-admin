@@ -77,8 +77,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx,json,scss,md,html}": [
-      "prettier --write",
-      "git add"
+      "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+      "git add ."
     ]
   },
   "devDependencies": {
